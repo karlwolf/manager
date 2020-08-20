@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 10
+      arrivalRate: 20000
+  http:
+    timeout: 30
+    pool: 1500
+    
+    
+scenarios:
+  - flow:
+    - get:
+        url: "/configs/FERNANDO%20GERMANO%208321"
+    
